@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Grid -->
+    <link rel="stylesheet" href="../../../naft/assets/css/bootstrap.grid.min.css" />
+    <!-- General Styles -->
+    <link rel="stylesheet" href="../../../naft/assets/css/naft.general.min.css" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../../naft/assets/css/user.flow.min.css" />
+    <!-- Page Title -->
+    <title>User Flow 01 :: 04</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="naft-account-verify">
+        <h1>verify your account</h1>
+        <div class="box-shadow-01">
+          <form action="">
+            <header class="border-header row align-items-center">
+              <div class="col-md-6"><h3>upload files</h3></div>
+              <div class="col-md-6">
+                <div class="account-status text-end">
+                  <i class="fa-solid fa-hourglass-half me-1"></i>
+                  Pending for approval from the Naft team
+                </div>
+              </div>
+            </header>
+            <div class="upload-boxes-wrapper">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="upload-box">
+                    <span class="upload-tip">
+                      Vat
+                      <i class="ms-3 fa-solid fa-circle-info">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis officiis
+                          necessitatibus magni libero adipisci!
+                        </p>
+                      </i>
+                    </span>
+                    <div class="upload-action text-center">
+                      <span class="filename hide">
+                        <i class="ms-auto fa-solid fa-pen"></i>
+                      </span>
+                      <div class="input-wrapper">
+                        <div class="to-upload">
+                          <i class="fa-solid fa-cloud-arrow-up"></i>
+                          Upload
+                          <input type="file" name="" id="" />
+                        </div>
+                        <div class="file-uploaded">
+                          <i class="fa-solid fa-file"></i>
+                          Uploaded
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="upload-box doc-accepted">
+                    <span class="upload-tip">
+                      CR
+                      <i class="ms-3 fa-solid fa-circle-info">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis officiis
+                          necessitatibus magni libero adipisci!
+                        </p>
+                      </i>
+                    </span>
+                    <div class="upload-action text-center">
+                      <span class="filename hide">
+                        <i class="ms-auto fa-solid fa-pen"></i>
+                      </span>
+                      <div class="input-wrapper">
+                        <div class="to-upload">
+                          <i class="fa-solid fa-circle-check"></i>
+                          Accepted
+                        </div>
+                        <div class="file-uploaded">
+                          <i class="fa-solid fa-file"></i>
+                          Uploaded
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="upload-box doc-rejected">
+                    <span class="upload-tip">
+                      Agreement
+                      <i class="ms-3 fa-solid fa-circle-info">
+                        <p>
+                          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis officiis
+                          necessitatibus magni libero adipisci!
+                        </p>
+                      </i>
+                      <a href="#!" class="doc-download ms-auto"
+                        ><i class="fa-solid fa-file-arrow-down"></i
+                      ></a>
+                    </span>
+                    <div class="upload-action text-center">
+                      <span class="filename hide">
+                        <i class="ms-auto fa-solid fa-pen"></i>
+                      </span>
+                      <div class="input-wrapper">
+                        <div class="to-upload">
+                          <i class="fa-solid fa-circle-xmark"></i>
+                          Rejected
+                        </div>
+                        <div class="file-uploaded">
+                          <i class="fa-solid fa-file"></i>
+                          Uploaded
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-action text-end">
+              <button class="btn btn-secondary" disabled>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Custom Scripts -->
+    <script>
+      /* Custom Input File */
+      $("input[type='file']").change(function () {
+        if ($(this).val()) {
+          let filename = $(this).val();
+          $(this).closest(".input-wrapper").addClass("upload-done");
+          $(this).closest(".upload-action").find(".filename").removeClass("hide").addClass("show");
+          $(this)
+            .closest(".upload-action")
+            .find(".filename")
+            .prepend(`<span class='pe-4'>${filename} </span>`);
+        }
+      });
+      /* Edit Uploaded File */
+      $(".upload-action .fa-pen").click(function () {
+        $(this).closest(".upload-action").find("input[type='file']").val("");
+        $(this).parent().next().removeClass("upload-done");
+        $(this).parent().addClass("hide").removeClass("show");
+        $(this).parent().find("span").remove();
+      });
+    </script>
+  </body>
+</html>

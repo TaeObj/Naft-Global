@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Grid -->
+    <link rel="stylesheet" href="../../../naft/assets/css/bootstrap.grid.min.css" />
+    <!-- General Styles -->
+    <link rel="stylesheet" href="../../../naft/assets/css/naft.general.min.css" />
+    <!-- Select2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+    />
+    <!-- Datepicker Range -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../../naft/assets/css/dashboard.flow.min.css" />
+    <title>Flow 03 :: My Orders</title>
+  </head>
+  <body>
+    <!-- section :: Orders Filter -->
+    <section id="naft-order-filters" class="mb-4 pb-3">
+      <div class="container">
+        <div class="box-shadow-02 small-radius">
+          <header class="border-header d-flex align-items-center justify-content-between">
+            <div class="col-lg-3 col-md-4 col-sm-6 col flex-grow-1 me-3 me-sm-0">
+              <div class="orders-search">
+                <input class="form-control" type="text" name="" id="" placeholder="Search" />
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-8 col-sm-6 col flex-grow-0 text-end">
+              <button id="orders-filters-toggler" class="btn btn-primary btn-square">
+                <i class="fa-solid fa-sliders"></i>
+              </button>
+            </div>
+          </header>
+          <!-- Tags Filters -->
+          <div class="tags-filter border-header flex-wrap flex-sm-nowrap">
+            <div class="flex-grow-1 w-100 w-sm-auto me-0 me-sm-4 mb-3 mb-sm-0">
+              <select class="select-tag form-control w-100" multiple name="" id="">
+                <option value="Smart Cart">Smart Cart</option>
+                <option value="Naft App">Naft App</option>
+                <option value="Naft IPass">Naft IPass</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-end w-100 mw-fit w-sm-auto">
+              <button class="btn btn-primary flex-grow-sm-1 flex-grow-0 mw-100 me-3">Apply</button>
+              <button class="btn btn-secondary btn-square">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+            </div>
+          </div>
+          <!-- Term Filters -->
+          <div class="terms-filter border-header">
+            <div class="date-term single-date">
+              <input type="text" class="form-date" placeholder="Date" />
+            </div>
+            <div class="status-term">
+              <select>
+                <option></option>
+                <option value="Confirmed">Confirmed</option>
+                <option value="Pending">Pending</option>
+                <option value="Rejected">Rejected</option>
+              </select>
+            </div>
+            <div class="type-term">
+              <select>
+                <option></option>
+                <option value="IPass">IPass</option>
+                <option value="Smart Card">Smart Card</option>
+                <option value="Mobile App">Mobile App</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Orders Filter -->
+
+    <!-- Orders Search Result -->
+    <section id="naft-orders-results">
+      <div class="container">
+        <!-- One Result Block -->
+        <div class="result-box box-shadow-02 small-radius">
+          <!-- Order Header -->
+          <header class="order-header border-header row align-items-center justify-content-between">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start"
+              >
+                <h2 class="order-number"><span>5648</span> order</h2>
+                <span class="os-tag s-pending">Pending</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex align-items-center justify-content-center justify-content-md-end">
+                <p class="order-total">
+                  Total : <span class="text-red">SAR <span class="payment">600</span></span>
+                </p>
+                <button class="btn btn-secondary">Track Order</button>
+              </div>
+            </div>
+          </header>
+          <!-- Order Items -->
+          <ul class="order-items">
+            <!-- one Item -->
+            <li class="item-wrapper row align-items-center">
+              <div class="col-2">
+                <div class="item-thumb">
+                  <img
+                    class="w-100 d-block"
+                    src="../../../naft/assets/images/product-01.svg"
+                    alt="Product title goes here "
+                  />
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="item-details h-100 box-shadow-02 small-radius">
+                  <h3 class="item-title d-flex">Naft Pass Prepaid Card</h3>
+                  <div class="row align-items-center">
+                    <div class="col-md-5 mb-3 mb-md-0">
+                      <span class="item-price text-red me-4">SAR 300</span>
+                      <span class="item-quantity">Qty 1</span>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="d-flex flex-wrap justify-content-start justify-content-md-end">
+                        <span class="item-date me-4">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          24/02/2023
+                        </span>
+                        <div class="item-payment">
+                          <i class="fa-solid fa-credit-card"></i>
+                          Payment Method
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <!-- one Item -->
+            <li class="item-wrapper row align-items-center">
+              <div class="col-2">
+                <div class="item-thumb">
+                  <img
+                    class="w-100 d-block"
+                    src="../../../naft/assets/images/product-02.svg"
+                    alt="Product title goes here "
+                  />
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="item-details h-100 box-shadow-02 small-radius">
+                  <h3 class="item-title d-flex">Naft i Pass</h3>
+                  <div class="row align-items-center">
+                    <div class="col-md-5 mb-3 mb-md-0">
+                      <span class="item-price text-red me-4">SAR 300</span>
+                      <span class="item-quantity">Qty 1</span>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="d-flex flex-wrap justify-content-start justify-content-md-end">
+                        <span class="item-date me-4">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          24/02/2023
+                        </span>
+                        <div class="item-payment">
+                          <i class="fa-solid fa-credit-card"></i>
+                          Payment Method
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <!-- One Result Block -->
+        <div class="result-box box-shadow-02 small-radius">
+          <!-- Order Header -->
+          <header class="order-header border-header row align-items-center justify-content-between">
+            <div class="col-md-6 mb-4 mb-md-0">
+              <div
+                class="d-flex align-items-center justify-content-center justify-content-md-start"
+              >
+                <h2 class="order-number"><span>5648</span> order</h2>
+                <span class="os-tag s-completed">Completed</span>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="d-flex justify-content-center justify-content-md-end">
+                <p class="order-total">
+                  Total : <span class="text-red">SAR <span class="payment">600</span></span>
+                </p>
+              </div>
+            </div>
+          </header>
+          <!-- Order Items -->
+          <ul class="order-items">
+            <!-- one Item -->
+            <li class="item-wrapper row align-items-center">
+              <div class="col-2">
+                <div class="item-thumb">
+                  <img
+                    class="w-100 d-block"
+                    src="../../../naft/assets/images/product-02.svg"
+                    alt="Product title goes here "
+                  />
+                </div>
+              </div>
+              <div class="col-10">
+                <div class="item-details h-100 box-shadow-02 small-radius">
+                  <h3 class="item-title d-flex">
+                    Naft i Pass
+                    <a href="#!" class="ms-auto item-action">
+                      <i class="fa-solid fa-arrows-rotate"></i>
+                      Recharge
+                    </a>
+                  </h3>
+                  <div class="row align-items-center">
+                    <div class="col-md-5 mb-3 mb-md-0">
+                      <span class="item-price text-red me-4">SAR 300</span>
+                      <span class="item-quantity">Qty 1</span>
+                    </div>
+                    <div class="col-md-7">
+                      <div class="d-flex flex-wrap justify-content-start justify-content-md-end">
+                        <span class="item-date me-4">
+                          <i class="fa-solid fa-calendar-days"></i>
+                          24/02/2023
+                        </span>
+                        <div class="item-payment">
+                          <i class="fa-solid fa-credit-card"></i>
+                          Payment Method
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- END Orders Search Result -->
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Datepicker Range -->
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- Custom Scripts -->
+    <script src="../../../naft/assets/js/naft-db.js"></script>
+    <!-- Page Scripts -->
+    <script>
+      $(document).ready(function () {
+        function fireFilters() {
+          /* Running Select2 */
+          $(".select-tag").select2({
+            minimumResultsForSearch: Infinity,
+            placeholder: "Select a tag",
+          });
+          $(".status-term select").select2({
+            minimumResultsForSearch: Infinity,
+            placeholder: "Status",
+          });
+          $(".type-term select").select2({
+            minimumResultsForSearch: Infinity,
+            placeholder: "Type",
+          });
+        }
+        /* Toggle Filter Panel */
+        $("#orders-filters-toggler").click(function (callback) {
+          $(this).closest("header").toggleClass("filters-shown");
+          $(".tags-filter, .terms-filter").toggleClass("d-flex");
+          fireFilters();
+          document.querySelector(".form-date").value = "";
+        });
+      });
+    </script>
+  </body>
+</html>

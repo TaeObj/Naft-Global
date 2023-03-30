@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Bootstrap Grid -->
+    <link rel="stylesheet" href="../../../naft/assets/css/bootstrap.grid.min.css" />
+    <!-- General Styles -->
+    <link rel="stylesheet" href="../../../naft/assets/css/naft.general.min.css" />
+    <!-- Select2 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css"
+    />
+    <!-- Datepicker Range -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
+    />
+
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="../../../naft/assets/css/dashboard.flow.min.css" />
+    <title>Flow 03 :: My EDIT Modal</title>
+  </head>
+  <body>
+    <div id="modal-edit" class="naft-modal">
+      <div class="modal-dialogue box-shadow-01 p-0 w-100">
+        <div class="db-modal-header">
+          <button class="db-modal-close"><i class="fa-solid fa-xmark"></i></button>
+          <h3 class="db-modal-title">
+            <span class="modal-icon box-shadow-01"><i class="fa-solid fa-pen"></i></span>
+            Edit
+          </h3>
+        </div>
+        <div class="db-modal-body">
+          <form action="">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Card Name Holder" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Amount" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="edit-times-term">
+                    <select class="w-100">
+                      <option></option>
+                      <option value="Confirmed">Confirmed</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Rejected">Rejected</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="edit-type-term">
+                    <select class="w-100">
+                      <option></option>
+                      <option value="Confirmed">Confirmed</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Rejected">Rejected</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="edit-amount-term">
+                    <select class="w-100">
+                      <option></option>
+                      <option value="Confirmed">Confirmed</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Rejected">Rejected</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="edit-mamount-term">
+                    <select class="w-100">
+                      <option></option>
+                      <option value="Confirmed">Confirmed</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Rejected">Rejected</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="edit-volume-term">
+                    <select class="w-100">
+                      <option></option>
+                      <option value="Confirmed">Confirmed</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Rejected">Rejected</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="edit-mvolume-term">
+                    <select class="w-100">
+                      <option></option>
+                      <option value="Confirmed">Confirmed</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Rejected">Rejected</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="edit-limitv-term">
+                    <select class="w-100">
+                      <option></option>
+                      <option value="Confirmed">Confirmed</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Rejected">Rejected</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <div class="edit-limitloc-term">
+                    <select class="w-100">
+                      <option></option>
+                      <option value="Confirmed">Confirmed</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Rejected">Rejected</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-group">
+                  <div class="edit-station-term">
+                    <select class="w-100">
+                      <option></option>
+                      <option value="Confirmed">Confirmed</option>
+                      <option value="Pending">Pending</option>
+                      <option value="Rejected">Rejected</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Name" />
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="form-group">
+                  <input type="text" class="form-control" placeholder="Membership" />
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="text-center pt-2">
+                  <button class="btn btn-primary">Save</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <section id="naft-product-info">
+      <div class="container">
+        <div class="box-shadow-02 small-radius">
+          <div class="row">
+            <div class="col-lg-2 col-md-3 col-sm-4">
+              <div class="product-thumb h-100">
+                <img
+                  class="w-100 h-100"
+                  src="../../../naft/assets/images/product-01.svg"
+                  alt="Product Title Goes Here"
+                />
+              </div>
+            </div>
+            <div class="col-lg-10 col-md-9 col-sm-8">
+              <div class="product-info-list">
+                <h2>Manage Cards</h2>
+                <div class="row">
+                  <div class="col-lg-6 col-md-12">
+                    <table class="w-100">
+                      <tbody>
+                        <tr>
+                          <th>your account credit card limit</th>
+                          <td>1.00000.0000 sar</td>
+                        </tr>
+                        <tr>
+                          <th>total used amount</th>
+                          <td>45.255.45</td>
+                        </tr>
+                        <tr>
+                          <th>account balance</th>
+                          <td>59.05</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <div class="col-lg-6 col-md-12">
+                    <table class="w-100">
+                      <tbody>
+                        <tr>
+                          <th>number of naft pass cards on file</th>
+                          <td>90</td>
+                        </tr>
+                        <tr>
+                          <th>all cards cradit</th>
+                          <td>920.165.684</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section :: Orders Filter -->
+    <section id="naft-order-filters" class="mb-4 pb-3">
+      <div class="container">
+        <div class="box-shadow-02 small-radius">
+          <!-- Section Header -->
+          <header class="border-header d-flex align-items-center justify-content-between">
+            <div class="col-lg-3 col-md-4 col-sm-6 col flex-grow-1 me-3 me-sm-0">
+              <div class="orders-search">
+                <input class="form-control" type="text" name="" id="" placeholder="Search" />
+              </div>
+            </div>
+            <div
+              class="col-lg-9 col-md-8 col-sm-6 col flex-grow-0 text-end d-flex flex-row-reverse align-items-center"
+            >
+              <button id="orders-filters-toggler" class="btn btn-primary btn-square">
+                <i class="fa-solid fa-sliders"></i>
+              </button>
+              <div class="my-pass-actions d-flex">
+                <button class="btn btn-square btn-action btn-transfer">
+                  <i class="fa-solid fa-user-group"></i>
+                </button>
+                <button class="btn btn-square btn-action btn-recharge">
+                  <i class="fa-solid fa-rotate"></i>
+                </button>
+                <button class="btn btn-square btn-action btn-check">
+                  <i class="fa-solid fa-check"></i>
+                </button>
+                <button class="btn btn-square btn-action btn-edit">
+                  <i class="fa-solid fa-pen"></i>
+                </button>
+              </div>
+            </div>
+          </header>
+          <!-- Section Tags Filter -->
+          <div class="tags-filter d-flex border-header flex-wrap flex-sm-nowrap">
+            <div class="flex-grow-1 w-100 w-sm-auto me-0 me-sm-4 mb-3 mb-sm-0">
+              <select class="select-tag form-control w-100" multiple name="" id="">
+                <option value="Smart Cart">Smart Cart</option>
+                <option value="Naft App">Naft App</option>
+                <option value="Naft IPass">Naft IPass</option>
+              </select>
+            </div>
+            <div class="d-flex justify-content-end w-100 mw-fit w-sm-auto">
+              <button class="btn btn-primary flex-grow-sm-1 flex-grow-0 mw-100 me-3">Apply</button>
+              <button class="btn btn-secondary btn-square">
+                <i class="fa-solid fa-rotate-right"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END Orders Filter -->
+
+    <!-- Section :: Consumption Table -->
+    <section id="naft-my-pass" class="mb-4 pb-3">
+      <div class="container">
+        <div class="dashboard-table">
+          <table class="w-100">
+            <thead>
+              <tr>
+                <th>checkbox</th>
+                <th>Card Number</th>
+                <th>Holder's Name</th>
+                <th>Credit Limit</th>
+                <th>Used Amount</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><input type="checkbox" name="" id="" /></td>
+                <td>10023569874</td>
+                <td>Ahmed Saud</td>
+                <td>0</td>
+                <td>0</td>
+                <td>12.00</td>
+                <td>Deactivate</td>
+                <td class="actions-list">
+                  <div class="my-pass-actions d-flex">
+                    <button class="btn btn-square btn-action btn-transfer">
+                      <i class="fa-solid fa-user-group"></i>
+                    </button>
+                    <button class="btn btn-square btn-action btn-recharge">
+                      <i class="fa-solid fa-rotate"></i>
+                    </button>
+                    <button class="btn btn-square btn-action btn-check">
+                      <i class="fa-solid fa-check"></i>
+                    </button>
+                    <button class="btn btn-square btn-action btn-edit">
+                      <i class="fa-solid fa-pen"></i>
+                    </button>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+    <!-- END Consumption Table -->
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- Select2 -->
+    <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+    <!-- Datepicker Range -->
+    <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <!-- Custom Scripts -->
+    <script>
+      $(document).ready(function () {
+        /* Running Select2 for Tags Multiple Select */
+        $(".select-tag").select2({
+          minimumResultsForSearch: Infinity,
+          placeholder: "Select a tag",
+        });
+        /* Running Select2 for Modal "EDIT" Options */
+        $(".edit-times-term select").select2({
+          placeholder: "Times",
+        });
+        $(".edit-type-term select").select2({
+          placeholder: "Credit Limit",
+        });
+        $(".edit-amount-term select").select2({
+          placeholder: "Amount",
+        });
+        $(".edit-mamount-term select").select2({
+          placeholder: "Used Amount",
+        });
+        $(".edit-volume-term select").select2({
+          placeholder: "Status",
+        });
+        $(".edit-mvolume-term select").select2({
+          placeholder: "Status",
+        });
+        $(".edit-limitv-term select").select2({
+          placeholder: "Status",
+        });
+        $(".edit-limitloc-term select").select2({
+          placeholder: "Status",
+        });
+        $(".edit-station-term select").select2({
+          placeholder: "Status",
+        });
+      });
+    </script>
+  </body>
+</html>

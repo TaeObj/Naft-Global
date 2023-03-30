@@ -1,0 +1,27 @@
+Redmine Wiki :
+https://redmine.objects.ws/projects/naft/wiki/Credentials_naft
+
+---------------------------------------------
+
+URL : https://naft.objectsdev.com/wp-admin
+user : admin-naft
+pass : moo2IKdq6Ot345hv
+
+---------------------------------------------
+
+db-u : https://naft.objectsdev.com/phpmyadmin
+db-n : naft_db
+db-u : naft_u
+db-p : HbdbRD2kCAyE3qE8
+
+---------------------------------------------
+
+ssh-ip : 139.162.162.52
+ssh-user : naft
+ssh-port : 4455
+ssh-command : ssh -p 4455 naft@139.162.162.52
+
+---------------------------------------------
+
+
+

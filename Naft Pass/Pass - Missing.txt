@@ -1,0 +1,43 @@
+User Flow 04
+"btn-secondary" hover and focus style.
+------------------------------------------
+.container >> set width in desktop
+and responsive as elementor and change BS
+media queries to match elementor 
+=> When launch live pages
+------------------------------------------
+Flow Navigation
+=> When launch live pages
+------------------------------------------
+Consuption :: Datatable Plugin Pagination
+- When running plugin with developers
+------------------------------------------
+My Naft Pass
+- Table checkboxes
+- Table Actions
+------------------------------------------
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+-
+------------------------------------------
+Single Datepicker
+- Styling dropdowns.
+- Icon calendar
+------------------------------------------
+.item-action
+[Recharge] hover and focus colors.
+------------------------------------------
+#orders-filters-toggler
+To toggle filters block.
+------------------------------------------
+My Naft Pass
+- Table action btns hover effect
+------------------------------------------

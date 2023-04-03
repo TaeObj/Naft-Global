@@ -1,2 +1,0 @@
-User Flow 04
-"btn-secondary" hover and focus style.
